@@ -11,16 +11,30 @@
 
    <body>
        <div class="container">
-            <nav class="navbar bg-dark">
+            <nav class="navbar">
                 <h1 class="title">Weather Dashboard</h1>
             </nav>
+       
+            <div class="row">
+                <div class="col-4 bg-light">
+                    <h2>Search for a City</h2>
+                     <input id="city" type="text" placeholder="Name of city" name="searchbox" required>
+                     <button class="btn search-btn">Search</button>
+                </div>
+                <div class="city-list"></div>
+
+           <div class="col-8">
+                 <div class="row">
+                    <div class="card">
+                     <div class="card-body"></div>
+                </div>
+            </div>
+                <div class="row">
+                    <h3>5 Day Forecast:</h3>
+                </div>
+            <div id="week-forecast" class="row"></div>   
        </div>
-       <div class="row">
-           <section>
-               <h2>Search</h2>
-                <input type="text" placeholder="Name of city" name="searchbox" required>
-                <button class="btn search-btn">Search</button>
-           </section>
+       
 
        </div>
    </body>
