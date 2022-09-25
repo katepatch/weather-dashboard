@@ -97,4 +97,11 @@ var cityWeather = function(city, searchInput) {
     var dispalyWindSpeed = document.querySelector("#wind-input");
     var currentWindSpeed = city.wind.speed + " MPH";
     dispalyWindSpeed.textContent = currentWindSpeed;
+
+    var newCityEl = document.createElement("li");
+    newCityEl.className = "list-group-item";
+    newCityEl.textContent = searchInput;
+    newCityEl.addEventListener("click", clickHandler);
+    previousCityEl.appendChild(newCityEl);
+    
 }
