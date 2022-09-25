@@ -73,4 +73,14 @@ var searchCityUv = function(lon, lat, city) {
     })
 };
 
+var cityWeather = function(city, searchInput) {
 
+    cityContainerEl.textContent = '';
+    citySearch.textContent = searchInput;
+
+    var displayCurrentDate = document.querySelector("#city-current-date");
+    var currentDate = moment();
+    displayCurrentDate.textContent = currentDate.format("(L)");
+
+    
+}
