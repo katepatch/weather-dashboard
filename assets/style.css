@@ -15,6 +15,19 @@ header {
     padding: 10px;
 }
 
+.search {
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
 #forecast-cards {
-    margin: auto;
+    justify-content: space-around;
+}
+
+.weather-container {
+    margin: 150px auto;
+    padding: 50px 50px;
 }

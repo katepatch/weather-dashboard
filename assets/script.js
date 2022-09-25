@@ -124,3 +124,21 @@ var displayCurrentUv = function(data) {
             currentUvEl.innerHTML=" " + uv + " "; 
         }
 };
+
+var getForecast = function(city) {
+    var forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&cnt=6&appid=" + key;
+
+    fetch(forecastUrl).then(function(response) {
+        if (response.ok) {
+            response.json().then(function(data) {
+                displayForecast(data.list);
+            })
+        } else {
+            alert("Error" + response.statusText);
+        }
+    })
+
+    .catch(function(error) {
+        alert("Can't connecto to Open Weather");
+    })
+};
