@@ -142,3 +142,29 @@ var getForecast = function(city) {
         alert("Can't connect to Open Weather");
     })
 };
+
+var displayForecast = function (list) {
+
+    for (var i = 0; i <=4; i++) {
+
+        var displayDate1 = document.querySelector("#date-0");
+        var forecastDate1 = moment().add(1, "days").format("L");
+        displayDate1.textContent = forecastDate1;
+
+        var displayDate2 = document.querySelector("#date-1");
+        var forecastDate2 = moment().add(2, "days").format("L");
+        displayDate2.textContent = forecastDate2;
+
+        var displayDate3 = document.querySelector("#date-2");
+        var forecastDate3 = moment().add(3, "days").format("L");
+        displayDate3.textContent = forecastDate3;
+
+        var displayDate4 = document.querySelector("#date-3");
+        var forecastDate4 = moment().add(4, "days").format("L");
+        displayDate4.textContent = forecastDate4;
+
+        var displayDate5 = document.querySelector("#date-4");
+        var forecastDate5 = moment().add(5, "days").format("L");
+        displayDate5.textContent = forecastDate5;
+    }
+}
