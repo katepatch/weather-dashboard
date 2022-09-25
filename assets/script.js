@@ -166,5 +166,13 @@ var displayForecast = function (list) {
         var displayDate5 = document.querySelector("#date-4");
         var forecastDate5 = moment().add(5, "days").format("L");
         displayDate5.textContent = forecastDate5;
+
+        var displayTemp = document.querySelector(`#temp-${i}`);
+        var forecastTemp = list[i].main.temp + " °F";
+        displayTemp.textContent = forecastTemp;
+
+        var displayHumidity = document.querySelector(`#humidity-${i}`);
+        var forecastHumidity = list[i].main.humidity + "%";
+        displayHumidity.textContent = forecastHumidity; 
     }
 }
