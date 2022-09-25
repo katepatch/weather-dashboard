@@ -37,3 +37,23 @@ var clickHandler = function (event) {
     getForecast(clickCity);
 };
 
+var getCityWeather = function(city) {
+    var apiUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=" + key;
+
+    fetch(apiUrl).then(function(response) {
+        if(response.ok) {
+            response.json().then(function(data) {
+                displayCityWeather(data, city);
+            });
+        } else {
+            alert("error:" + response.statusText);
+        }
+    })
+
+    .catch(function(error) {
+        alert("can't connecto to Open Weather");
+    })
+};
+
+
+
