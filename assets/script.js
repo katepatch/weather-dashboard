@@ -85,4 +85,10 @@ var cityWeather = function(city, searchInput) {
     var displayIcon = document.querySelector("#city-icon");
     var currentIcon = "https://openweathermap.org/img/wn/" + city.weather[0].icon + "@2x.png"
     displayIcon.setAttribute ("src", currentIcon);
+
+    var displayTemp = document.querySelector("#temp-input")
+    var currentTemp = Math.round(city.main.temp) + " °F";
+    displayTemp.textContent = currentTemp;
+
+    
 }
