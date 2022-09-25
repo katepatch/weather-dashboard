@@ -103,5 +103,9 @@ var cityWeather = function(city, searchInput) {
     newCityEl.textContent = searchInput;
     newCityEl.addEventListener("click", clickHandler);
     previousCityEl.appendChild(newCityEl);
-    
-}
+
+    var lon = city.coor.lon;
+    var lat = city.coord.lat;
+
+    searchCityUv(lon, lat, city);
+};
