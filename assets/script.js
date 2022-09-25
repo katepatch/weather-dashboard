@@ -176,3 +176,5 @@ var displayForecast = function (list) {
         displayHumidity.textContent = forecastHumidity; 
     }
 }
+
+userFormEl.addEventListener("submit", formSubmitHandler);
