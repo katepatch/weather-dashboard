@@ -139,6 +139,6 @@ var getForecast = function(city) {
     })
 
     .catch(function(error) {
-        alert("Can't connecto to Open Weather");
+        alert("Can't connect to Open Weather");
     })
 };
