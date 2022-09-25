@@ -90,5 +90,9 @@ var cityWeather = function(city, searchInput) {
     var currentTemp = Math.round(city.main.temp) + " °F";
     displayTemp.textContent = currentTemp;
 
+    var displayHumidity = document.querySelector("#humidity-input");
+    var currentHumidity = city.main.humidity + "%";
+    displayHumidity.textContent = currentHumidity;
+    
     
 }
