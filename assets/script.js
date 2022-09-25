@@ -174,7 +174,27 @@ var displayForecast = function (list) {
         var displayHumidity = document.querySelector(`#humidity-${i}`);
         var forecastHumidity = list[i].main.humidity + "%";
         displayHumidity.textContent = forecastHumidity; 
+
+        var displayIcon1 = document.querySelector("#city-icon-1");
+        var currentIcon1 = "https://openweathermap.org/img/wn/" + list[1].weather[0].icon + "@2x.png"
+        displayIcon1.setAttribute ("src", currentIcon1);
+
+        var displayIcon2 = document.querySelector("#city-icon-2");
+        var currentIcon2 = "https://openweathermap.org/img/wn/" + list[2].weather[0].icon  + "@2x.png"
+        displayIcon2.setAttribute ("src", currentIcon2);
+
+        var displayIcon3 = document.querySelector("#city-icon-3");
+        var currentIcon3 = "https://openweathermap.org/img/wn/" + list[3].weather[0].icon  + "@2x.png"
+        displayIcon3.setAttribute ("src", currentIcon3);
+
+        var displayIcon4 = document.querySelector("#city-icon-4");
+        var currentIcon4 = "https://openweathermap.org/img/wn/" + list[4].weather[0].icon  + "@2x.png"
+        displayIcon4.setAttribute ("src", currentIcon4);
+
+        var displayIcon5 = document.querySelector("#city-icon-5");
+        var currentIcon5 = "https://openweathermap.org/img/wn/" + list[5].weather[0].icon  + "@2x.png"
+        displayIcon5.setAttribute ("src", currentIcon5);
     }
-}
+};
 
 userFormEl.addEventListener("submit", formSubmitHandler);
