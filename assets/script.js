@@ -61,7 +61,7 @@ var searchCityUv = function(lon, lat, city) {
     fetch(uvUrl).then(function(response) {
         if (response.ok) {
             response.json().then(function(lon, lat, city) {
-                displayCurrentUv(long, lat, city);
+                displayCurrentUv(lon, lat, city);
             });
         } else {
             alert("Error" + response.statusText);
