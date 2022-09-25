@@ -51,9 +51,26 @@ var getCityWeather = function(city) {
     })
 
     .catch(function(error) {
-        alert("can't connecto to Open Weather");
+        alert("Can't connect to Open Weather");
     })
 };
 
+var searchCityUv = function(lon, lat, city) {
+    var uvUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + key + "&lat=" + lat + "&lon=" + lon;
+
+    fetch(uvUrl).then(function(response) {
+        if (response.ok) {
+            response.json().then(function(lon, lat, city) {
+                displayCurrentUv(long, lat, city);
+            });
+        } else {
+            alert("Error" + response.statusText);
+        }
+    })
+
+    .catch(function(error) {
+        alert("Can't connect to Open Weather");
+    })
+};
 
 

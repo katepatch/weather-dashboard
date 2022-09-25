@@ -7,8 +7,8 @@ body {
 
 header {
     text-align: center;
-    border-style: dotted;
-    border-color: #f6bc66;
+    border-style: solid;
+    border-color: #fef4d7;
     border-width: 5px;
     background-image: linear-gradient(to right, #f08080, #fbc4ab);
     letter-spacing: 5px; 
