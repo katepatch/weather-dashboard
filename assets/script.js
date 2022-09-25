@@ -94,5 +94,7 @@ var cityWeather = function(city, searchInput) {
     var currentHumidity = city.main.humidity + "%";
     displayHumidity.textContent = currentHumidity;
     
-    
+    var dispalyWindSpeed = document.querySelector("#wind-input");
+    var currentWindSpeed = city.wind.speed + " MPH";
+    dispalyWindSpeed.textContent = currentWindSpeed;
 }
