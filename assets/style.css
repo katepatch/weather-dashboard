@@ -14,3 +14,7 @@ header {
     letter-spacing: 5px; 
     padding: 10px;
 }
+
+#forecast-cards {
+    margin: auto;
+}
