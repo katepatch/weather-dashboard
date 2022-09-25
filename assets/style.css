@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+body {
+    background-image: linear-gradient(#ffdab9, white);
+    font-family: 'Sarabun', sans-serif; 
+    color: black;
+}
+
 header {
     text-align: center;
     border-style: ridge;
     border-color: black;
-        
+    background-image: linear-gradient(to right, #f08080, #fbc4ab);
+      
+    letter-spacing: 5px; 
 }
