@@ -8,7 +8,8 @@ This project also uses local storage to store previous searches and allows you t
 [User Story](#user-story)</br>
 [Project Criteria](#project-criteria)</br>
 [Preview](#preview)</br>
-[Questions](#questions)
+[Questions](#questions)</br>
+[Notes](#notes)
 
 ## User Story
 
@@ -32,8 +33,19 @@ THEN I am again presented with current and future conditions for that city
 
 ## Preview
 
+Deployed with [Github pages](https://katepatch.github.io/weather-dashboard/)
+
+![screenshot](/assets/images/weatherdash.png)
+![screenshot](/assets/images/weatherdash2.png)
+
 ## Questions
 
 If you have questions regarding this project or others you can reach me by:</br>
 Email: kate.epatch@gmail.com</br>
 Github: [katepatch](https://github.com/katepatch)
+
+## Notes
+
+Had trouble with the local storage storing the previous searched cities.  With more time I would like to get that code debugged.
+
+Also had an issue with display of the current temparture and readings of the city.  Will need to fix that.
