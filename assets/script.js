@@ -83,7 +83,7 @@ var displayCityWeather = function(city, searchInput) {
     displayCurrentDate.textContent = currentDate.format("L");
 
     var displayIcon = document.querySelector("#city-icon");
-    var currentIcon = "https://openweathermap.org/img/wn/" + city.weather[0].icon + "@2x.png"
+    var currentIcon = "https://openweathermap.org/img/wn/" + displayCityWeather.weather[0].icon + "@2x.png"
     displayIcon.setAttribute ("src", currentIcon);
 
     var displayTemp = document.querySelector("#temp-input")
