@@ -73,14 +73,14 @@ var searchCityUv = function(lon, lat, city) {
     })
 };
 
-var cityWeather = function(city, searchInput) {
+var displayCityWeather = function(city, searchInput) {
 
     cityContainerEl.textContent = '';
     citySearch.textContent = searchInput;
 
     var displayCurrentDate = document.querySelector("#city-current-date");
     var currentDate = moment();
-    displayCurrentDate.textContent = currentDate.format("(L)");
+    displayCurrentDate.textContent = currentDate.format("L");
 
     var displayIcon = document.querySelector("#city-icon");
     var currentIcon = "https://openweathermap.org/img/wn/" + city.weather[0].icon + "@2x.png"
@@ -104,10 +104,10 @@ var cityWeather = function(city, searchInput) {
     newCityEl.addEventListener("click", clickHandler);
     previousCityEl.appendChild(newCityEl);
 
-    var lon = city.coor.lon;
-    var lat = city.coord.lat;
+        var lon = city.coor.lon;
+        var lat = city.coord.lat;
 
-    searchCityUv(lon, lat, city);
+        searchCityUv(lon, lat, city);
 };
 
 var displayCurrentUv = function(data) {
